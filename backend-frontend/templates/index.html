@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+      <div id="content"  class="bg-image" >
+          <div class="container d-flex align-items-center justify-content-center text-center h-100">
+<!--            <h1 class="text-white mb-8">사용자 분석 기반 여행지 추천 시스템</h1>-->
+            <div>
+                <h1 class="text-white mb-8">사용자 분석 기반 여행지 추천 시스템</h1>
+              <p style = " font: bold 1.5em;  color:#083486;">여행지 관련 텍스트 데이터를 이용하여 여행지의 성향을 분석하고, <br>
+                    사용자의 성향과 현재 기분에 가장 어울리는 테마를 가진 여행지를 추천하는 사이트입니다.</p>
+
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <form action="{{ url_for('quest_post')}}" method="POST">
+                  <button class="btn btn-primary btn-lg mb-8" type="submit" >시작하기</button>
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+{% endblock %}

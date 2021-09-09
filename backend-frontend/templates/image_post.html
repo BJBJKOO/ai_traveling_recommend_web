@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    <div id="content" class="bg-image"  style="background-color: rgba(0, 0, 0, 0.2);">
+      <div class="container d-flex align-items-center justify-content-center text-center h-100">
+
+        <div id="loading">
+          <img src="static/image/LoadingAnimation.gif" alt="loading">
+        </div>
+
+        <form name="image_form" id="image_form" action="{{ url_for('recommend')}}" method="POST"  enctype="multipart/form-data" onsubmit="False">
+          <h1 class="text-white text-center mb-8">당신은 기분은 어떤가요?</h1>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center m-3">
+            <div id="image_preview">
+              <input type="file" class="btnAtt" id="btnAtt" name="file" multiple="multiple" style="display:none;"/>
+              <div id="att_zone" style="color:#083486;" data-placeholder="파일을 첨부 하려면 파일 선택 버튼을 클릭하거나 파일을 드래그앤드롭 하세요"></div>
+            </div>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+             <label class="btn btn-primary btn-lg" for="btnAtt" >이미지 올리기</label>
+             <button class="recommend-btn btn-primary btn-lg" id="recommend_request" type="button" width="100%;">여행지 추천 시작</button>
+          </div>
+        </form>
+
+
+      </div>
+    </div>
+
+    <script type="text/javascript" src="static/js/img_upload.js"></script>
+
+{% endblock %}
