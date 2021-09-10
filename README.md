@@ -31,6 +31,9 @@ ai기반 사용자 맞춤 제주도 여행지 추천 웹사이트
 - flask를 이용하여 단순 벡엔드 서버 구성
 - aws를 이용하여 infra구축
 ---
-
+<img width="1028" alt="web_1" src="https://user-images.githubusercontent.com/65409144/132795087-ffe62531-9731-4386-9f46-01e8ba1eee2f.png">
+<img width="955" alt="web_2" src="https://user-images.githubusercontent.com/65409144/132795090-37ca74c4-9255-44f4-9463-9cf6162362f5.png">
+<img width="955" alt="web_3" src="https://user-images.githubusercontent.com/65409144/132795091-8de0b1df-5370-4e13-9c2c-658834644eff.png">
+<img width="955" alt="web_4" src="https://user-images.githubusercontent.com/65409144/132795095-8f5f2045-a510-457f-a4ac-b60bfa23fd8f.png">
 
 
